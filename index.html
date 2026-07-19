@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for the Green Bin mobile application.">
+  <meta name="theme-color" content="#12372a">
+  <meta property="og:title" content="Green Bin Privacy Policy">
+  <meta property="og:description" content="Learn how Green Bin handles scan images, location, feedback, and other app data.">
+  <meta property="og:type" content="website">
+  <title>Privacy Policy | Green Bin</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Green Bin home">
+        <span class="brand-mark" aria-hidden="true">♻</span>
+        <span>Green Bin</span>
+      </a>
+      <a class="contact-link" href="mailto:mallela.rakshan@gmail.com">Contact</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="eyebrow">LEGAL</div>
+      <h1>Privacy Policy</h1>
+      <p class="intro">How Green Bin collects, processes, stores, and protects information when you use the mobile app.</p>
+      <div class="meta">
+        <span>Last updated July 18, 2026</span>
+        <span class="dot" aria-hidden="true">•</span>
+        <span>Green Bin mobile application</span>
+      </div>
+    </section>
+
+    <div class="content-layout">
+      <aside class="toc" aria-label="Table of contents">
+        <div class="toc-title">On this page</div>
+        <nav>
+          <a href="#section-1">Overview</a>
+          <a href="#section-2">Information collected</a>
+          <a href="#section-3">How information is used</a>
+          <a href="#section-4">Service providers</a>
+          <a href="#section-5">Data retention</a>
+          <a href="#section-6">Your choices</a>
+          <a href="#section-7">Security</a>
+          <a href="#section-9">Children’s privacy</a>
+          <a href="#section-13">Contact</a>
+        </nav>
+      </aside>
+
+      <article class="policy">
+        <div class="notice">
+          Green Bin is operated by Rakshan Mallela in Georgia, United States. By using Green Bin, you agree to the practices described in this Privacy Policy.
+        </div>
+        <section id="section-1"><h2>1. Overview</h2><p>Green Bin helps users identify items and receive guidance about whether those items should be recycled, composted, donated, taken to a special disposal location, or placed in the trash.</p>
+<p>Green Bin does not currently require users to create an account. Green Bin does not display advertisements, sell personal information, use personal information for targeted advertising, or track users across unrelated apps or websites.</p></section>
+<section id="section-2"><h2>2. Information Green Bin Collects and Processes</h2><h3>Scan Photos</h3>
+<p>When you take a photo or select an image from your device, Green Bin uploads the image to its backend so that it can attempt to identify the item and provide disposal guidance.</p>
+<p>The backend processes the uploaded image in memory or through framework-managed temporary upload storage. Green Bin does not intentionally save the original uploaded scan photo in its application database.</p>
+<p>For image recognition, Green Bin sends a re-encoded JPEG version of the scan image to Cloudflare Workers AI. Cloudflare therefore receives and processes the scan image as part of the recognition request.</p>
+<p>Temporary copies of an image may exist during processing in server memory, temporary upload storage, network infrastructure, backups, or third-party provider systems. The handling and retention of information by third-party providers may also be governed by their own policies and systems.</p>
+<p>Information derived from a scan may be stored or cached, including:</p>
+<ul>
+  <li>A perceptual image hash or fingerprint</li>
+  <li>An optional image embedding used for similarity matching</li>
+  <li>Predicted item names and materials</li>
+  <li>Possible alternative item labels</li>
+  <li>Recognition candidates and confidence information</li>
+  <li>Condition or classification information</li>
+  <li>Barcode and product-lookup information</li>
+  <li>Generated disposal guidance</li>
+  <li>Guidance source and retrieval information</li>
+  <li>Request identifiers</li>
+  <li>Cache and routing information</li>
+  <li>Diagnostic and reliability information</li>
+</ul>
+<p>An image fingerprint or embedding is a technical representation of an image used to recognize similar scans and improve response speed or reliability. It is not intended to recreate the original image or identify the person who submitted it.</p>
+
+<h3>Camera and Photo Library Access</h3>
+<p>Green Bin may request permission to access your device’s camera or photo library.</p>
+<p>Camera access is used to take photos of items you want to scan. Photo-library access is used only when you choose an existing image from your device.</p>
+<p>You can deny or revoke these permissions through your device settings. Green Bin’s scanning feature may not work without access to at least one image source.</p>
+
+<h3>Location Information</h3>
+<p>When you use the nearby disposal-location feature, Green Bin may request access to your device’s location.</p>
+<p>Depending on your device settings and operating system, Green Bin may receive approximate or precise latitude and longitude coordinates.</p>
+<p>These coordinates are sent to Green Bin’s backend and may be sent to Earth911 so that Green Bin can locate disposal or recycling facilities near you.</p>
+<p>Green Bin does not intentionally use location information to track your movements or create a persistent location history. However, coordinates are transmitted through backend request URLs and may temporarily appear in server, network, or service-provider logs.</p>
+<p>Location information is not connected to a named user account because Green Bin does not currently have user accounts.</p>
+<p>You can deny or revoke location permission through your device settings. Other parts of Green Bin can still be used without location access, but the nearby-location feature may not function correctly.</p>
+
+<h3>Installation Identifier and Daily Scan Usage</h3>
+<p>Green Bin generates a random installation identifier on your device. When supported by the device, this identifier is created using a randomly generated UUID.</p>
+<p>The raw installation identifier is stored locally on your device and is sent to Green Bin’s backend when you perform a scan.</p>
+<p>The backend converts the identifier into a one-way SHA-256 hash before storing it in Green Bin’s database. Green Bin does not intentionally store the raw installation identifier in its backend database.</p>
+<p>Stored scan-limit information may include:</p>
+<ul>
+  <li>The hashed installation identifier</li>
+  <li>The date</li>
+  <li>The number of scans performed on that date</li>
+  <li>Whether the daily scan limit was reached</li>
+</ul>
+<p>This identifier is used to enforce daily scan limits and protect the service from excessive or abusive requests. It is not an advertising identifier and is not intended to reveal your name.</p>
+<p>Clearing the app’s storage or reinstalling Green Bin may cause a new installation identifier to be created.</p>
+
+<h3>Recent Scan Information Stored on Your Device</h3>
+<p>Green Bin may save recent scan information locally on your device. This information may include:</p>
+<ul>
+  <li>The scanned or predicted item</li>
+  <li>The predicted material or disposal category</li>
+  <li>Disposal guidance</li>
+  <li>A local image URI or image reference</li>
+  <li>The date of the scan</li>
+  <li>Whether you marked the item as disposed</li>
+  <li>Recognition status and confidence information</li>
+  <li>Guidance and nearby-search context</li>
+</ul>
+<p>Recent scan records remain on your device until you delete them through the app, clear Green Bin’s application storage, or uninstall Green Bin.</p>
+<p>Deleting an individual recent scan or clearing recent-scan history removes the stored history record. Green Bin does not currently guarantee that this action also deletes the underlying image file referenced by that record. Some image files may continue to exist in storage managed by your device, camera, photo library, or operating system.</p>
+
+<h3>Closed-Testing Feedback</h3>
+<p>During closed testing or other testing periods, Green Bin may allow you to submit optional feedback about a scan result.</p>
+<p>In-app feedback may include:</p>
+<ul>
+  <li>Whether the item was identified correctly</li>
+  <li>Whether the disposal guidance was helpful</li>
+  <li>A corrected item name</li>
+  <li>The request identifier associated with the scan</li>
+  <li>Recognition, guidance, cache, routing, and diagnostic information associated with the original result</li>
+  <li>Information about a corrected prediction or updated guidance</li>
+</ul>
+<p>Feedback may be stored in Green Bin’s database and connected to the original request identifier.</p>
+<p>The in-app feedback endpoint does not currently include a general freeform notes field. However, information you send separately by email may include any text you choose to provide.</p>
+
+<h3>Barcode Information</h3>
+<p>When a barcode is detected, Green Bin may send the barcode value to Open Food Facts to identify the product and obtain product information.</p>
+<p>The barcode or related product information may also be included in recognition processing, cached recognition data, or diagnostic logs.</p>
+<p>Barcodes generally identify products rather than individual users. Green Bin does not use barcode information to build a purchasing profile or for advertising.</p>
+
+<h3>Technical, Diagnostic, and Log Information</h3>
+<p>Green Bin and its hosting or service providers may automatically receive technical information when the app communicates with the backend.</p>
+<p>This information may include:</p>
+<ul>
+  <li>Internet Protocol address</li>
+  <li>Request date and time</li>
+  <li>Backend endpoint or request URL</li>
+  <li>Response status</li>
+  <li>Uploaded filename and content type</li>
+  <li>Request identifiers</li>
+  <li>Error messages and exception information</li>
+  <li>Network and performance information</li>
+  <li>Perceptual image hashes</li>
+  <li>Predicted item labels</li>
+  <li>Material or disposal categories</li>
+  <li>Barcode values or product information</li>
+  <li>Recognition candidates and confidence values</li>
+  <li>Cache and routing decisions</li>
+  <li>Provider response or error previews</li>
+</ul>
+<p>This information is used to operate Green Bin, investigate errors, monitor reliability, prevent abuse, and improve recognition and disposal guidance.</p>
+<p>Green Bin does not currently use an advertising analytics SDK, advertising identifier, cross-app tracking system, user authentication system, payment system, push-notification system, or third-party crash-reporting SDK.</p>
+
+<h3>Information You Provide by Email</h3>
+<p>When you contact Green Bin by email, Green Bin receives your email address and any information included in your message.</p>
+<p>This information is used to respond to your request, provide support, review feedback, or process a privacy or deletion request.</p>
+<p>Please avoid including unnecessary sensitive personal information in emails or feedback.</p></section>
+<section id="section-3"><h2>3. How Green Bin Uses Information</h2><p>Green Bin may use information to:</p>
+<ul>
+  <li>Identify scanned items and materials</li>
+  <li>Evaluate possible recognition alternatives</li>
+  <li>Generate recycling, composting, donation, hazardous-waste, and trash guidance</li>
+  <li>Find nearby disposal and recycling locations</li>
+  <li>Look up products using barcodes</li>
+  <li>Enforce daily scan limits</li>
+  <li>Prevent misuse, fraud, or excessive requests</li>
+  <li>Store and display recent scan history on your device</li>
+  <li>Cache recognition and guidance results</li>
+  <li>Improve response speed and consistency</li>
+  <li>Investigate errors and technical problems</li>
+  <li>Evaluate recognition and guidance reliability</li>
+  <li>Review feedback submitted during testing</li>
+  <li>Maintain the security and operation of the app</li>
+  <li>Respond to support and privacy requests</li>
+  <li>Comply with applicable legal obligations</li>
+</ul>
+<p>Green Bin does not sell personal information.</p>
+<p>Green Bin does not use scan images, location information, barcode information, feedback, or installation identifiers for advertising.</p></section>
+<section id="section-4"><h2>4. Service Providers</h2><p>Green Bin relies on third-party service providers to operate certain features.</p>
+<p>Depending on the feature and the production configuration, these providers may include:</p>
+<ul>
+  <li><strong>Supabase</strong>, for database storage, caching, feedback records, and scan-limit information</li>
+  <li><strong>Cloudflare Workers AI</strong>, for image recognition</li>
+  <li><strong>Groq</strong>, for text-based disposal-guidance generation or material matching when those features are enabled</li>
+  <li><strong>Earth911</strong>, for finding nearby disposal and recycling locations</li>
+  <li><strong>Open Food Facts</strong>, for barcode and product-information lookup</li>
+  <li><strong>Google Maps or another maps application</strong>, when you choose to open directions to a location</li>
+  <li><strong>Expo and EAS</strong>, for application development, builds, and related app infrastructure</li>
+  <li><strong>A backend hosting provider</strong>, for operating Green Bin’s backend and processing network requests</li>
+</ul>
+<p>The exact backend hosting provider may change. The current production hosting configuration should be reflected in Green Bin’s published documentation when applicable.</p>
+<p>Different providers receive different information:</p>
+<ul>
+  <li>Cloudflare Workers AI receives a re-encoded scan image and recognition instructions.</li>
+  <li>Groq may receive text describing recognized items, materials, conditions, catalog options, or disposal-guidance context. Groq does not receive the scan image through Green Bin’s current guidance flow.</li>
+  <li>Earth911 receives item or material search information and location coordinates when you request nearby locations.</li>
+  <li>Open Food Facts receives barcode values and requests for product information.</li>
+  <li>Supabase may receive derived recognition information, image fingerprints, embeddings, guidance caches, feedback records, diagnostic context, and hashed installation identifiers.</li>
+  <li>A backend hosting provider may process uploaded images, request URLs, IP addresses, logs, and technical information while operating the service.</li>
+  <li>Google Maps or another maps application may receive a facility address or coordinates when you choose to open directions.</li>
+</ul>
+<p>These providers may process information according to their own privacy policies, terms, retention periods, and security practices.</p>
+<p>Green Bin may also disclose information when reasonably necessary to:</p>
+<ul>
+  <li>Comply with a law, court order, or valid government request</li>
+  <li>Protect the safety, security, rights, or property of Green Bin or its users</li>
+  <li>Investigate fraud, abuse, security incidents, or technical problems</li>
+  <li>Transfer the app or its assets to another operator, with notice when legally required</li>
+  <li>Carry out another purpose with your consent</li>
+</ul></section>
+<section id="section-5"><h2>5. Data Retention</h2><h3>Scan Images</h3>
+<p>Green Bin does not intentionally save original uploaded scan-image files in its application database.</p>
+<p>Images may exist temporarily in server memory, framework-managed upload storage, network infrastructure, or third-party provider systems while a request is processed.</p>
+<p>Green Bin does not control all temporary storage, logging, backup, or retention practices used by its hosting provider or Cloudflare Workers AI.</p>
+
+<h3>Recognition and Guidance Information</h3>
+<p>Derived recognition information may include image fingerprints, embeddings, predicted labels, barcode data, classification information, confidence information, and cache metadata.</p>
+<p>Generated disposal guidance, retrieval information, normalized item information, condition flags, and cache usage information may also be stored.</p>
+<p>Some recognition cache records do not currently have a fixed automatic expiration period. These records may remain until they are manually deleted, replaced, or removed as part of maintenance.</p>
+<p>Guidance cache records may contain expiration information, but expired records may not be physically deleted immediately.</p>
+
+<h3>Scan-Limit Information</h3>
+<p>Hashed installation identifiers and daily scan-count records may be retained for as long as reasonably needed to enforce usage limits, prevent abuse, troubleshoot problems, and operate the service.</p>
+<p>Green Bin does not currently guarantee automatic deletion of every historical scan-count record after a specific number of days.</p>
+
+<h3>Closed-Testing Feedback</h3>
+<p>Closed-testing feedback and associated diagnostic context are retained for as long as reasonably needed to evaluate testing results, investigate problems, and improve Green Bin.</p>
+<p>Feedback cleanup is currently performed manually. Green Bin does not currently guarantee that feedback is automatically deleted after 90 days.</p>
+<p>Feedback may be deleted when it is no longer needed or when a valid deletion request can reasonably be connected to the relevant records.</p>
+<p>Information may be retained longer when necessary for security, legal compliance, dispute resolution, or the investigation of technical problems.</p>
+
+<h3>Server Logs</h3>
+<p>Technical and access logs may be retained for security, reliability, debugging, performance monitoring, and abuse prevention.</p>
+<p>The exact retention period may depend on Green Bin’s backend hosting provider and other service providers. Green Bin does not guarantee a specific log-retention period unless one is explicitly stated in a later version of this Privacy Policy.</p>
+
+<h3>Locally Stored Information</h3>
+<p>Recent scans, the raw installation identifier, scan-limit metadata, feedback state, and related information may be stored locally on your device.</p>
+<p>This information generally remains until it is removed through the app, the app’s storage is cleared, or Green Bin is uninstalled.</p>
+<p>Deleting recent-scan records does not currently guarantee deletion of every underlying local image file.</p>
+
+<h3>Email Communications</h3>
+<p>Support, feedback, and privacy-related emails may be retained for as long as reasonably needed to respond to the request, document its resolution, prevent abuse, or comply with legal obligations.</p></section>
+<section id="section-6"><h2>6. Your Choices and Rights</h2><p>You may:</p>
+<ul>
+  <li>Choose whether to take or select a scan photo</li>
+  <li>Deny or revoke camera permission</li>
+  <li>Deny or revoke photo-library permission</li>
+  <li>Deny or revoke location permission</li>
+  <li>Use most app features without granting location access</li>
+  <li>Delete recent-scan history records from within the app</li>
+  <li>Clear Green Bin’s locally stored data through your device settings</li>
+  <li>Uninstall Green Bin</li>
+  <li>Choose whether to submit testing feedback</li>
+  <li>Contact Green Bin to request access to or deletion of server-side information that can reasonably be associated with you</li>
+</ul>
+<p>Because Green Bin does not have user accounts and generally relies on request identifiers, hashed installation identifiers, and other pseudonymous information, Green Bin may not always be able to connect a backend record to a specific person.</p>
+<p>When submitting a deletion request, you may be asked to provide information reasonably needed to locate the relevant record, such as an approximate scan or feedback date, a request identifier, a corrected item name, or details about the feedback submitted.</p>
+<p>Green Bin will not request more information than reasonably necessary to process the request.</p>
+<p>To submit a privacy or deletion request, email <a href="mailto:mallela.rakshan@gmail.com">mallela.rakshan@gmail.com</a>.</p>
+<p>Some information may be retained when required by law or when reasonably necessary for security, fraud prevention, dispute resolution, or the establishment, exercise, or defense of legal claims.</p></section>
+<section id="section-7"><h2>7. Data Security</h2><p>Green Bin uses reasonable technical and organizational safeguards designed to protect information from unauthorized access, loss, misuse, alteration, or disclosure.</p>
+<p>These safeguards may include encrypted network connections, restricted database access, row-level security controls, service-role access controls, one-way hashing of installation identifiers, limiting access to backend systems, and limiting the types of information intentionally stored.</p>
+<p>However, no internet transmission or electronic storage system can be guaranteed to be completely secure.</p></section>
+<section id="section-8"><h2>8. International Processing</h2><p>Green Bin and its service providers may process information in the United States or other countries where their systems operate.</p>
+<p>Privacy and data-protection laws in those locations may differ from the laws where you live. Green Bin takes reasonable steps to handle information consistently with this Privacy Policy.</p></section>
+<section id="section-9"><h2>9. Children’s Privacy</h2><p>Green Bin is not specifically directed to children under 13.</p>
+<p>Green Bin does not knowingly collect personal information from children under 13. If you are a parent or guardian and believe that a child under 13 has submitted personal information through Green Bin, contact Green Bin at <a href="mailto:mallela.rakshan@gmail.com">mallela.rakshan@gmail.com</a> so that the information can be reviewed and deleted when reasonably possible.</p>
+<p>Green Bin’s final target-audience selection is determined through its Google Play listing and should be reviewed together with this policy.</p></section>
+<section id="section-10"><h2>10. Third-Party Links and Services</h2><p>Green Bin may provide links or directions to third-party websites, maps, recycling facilities, disposal providers, or other services.</p>
+<p>Green Bin does not control the availability, accuracy, security, content, or privacy practices of those third parties.</p>
+<p>You should review the privacy policies and terms of any third-party service you choose to use.</p></section>
+<section id="section-11"><h2>11. Disposal-Guidance Disclaimer</h2><p>Green Bin’s recognition results and disposal guidance may be generated or assisted by automated systems and may not always be accurate.</p>
+<p>Recycling and disposal rules vary by location. Users should verify guidance with their local waste authority, recycling provider, or disposal facility, especially for batteries, electronics, chemicals, sharp objects, medical waste, or other potentially hazardous items.</p>
+<p>This disclaimer does not change how Green Bin handles information, but it explains an important limitation of the service.</p></section>
+<section id="section-12"><h2>12. Changes to This Privacy Policy</h2><p>Green Bin may update this Privacy Policy when the app, its service providers, or its data practices change.</p>
+<p>When the policy is updated, the “Last updated” date at the top of the page will be changed.</p>
+<p>Material changes may also be communicated through the app or another appropriate notice.</p>
+<p>You should review this Privacy Policy periodically.</p></section>
+<section id="section-13"><h2>13. Contact</h2><div class="contact-card">
+  <strong>Rakshan Mallela</strong><br>
+  Green Bin<br>
+  Georgia, United States<br>
+  <a href="mailto:mallela.rakshan@gmail.com">mallela.rakshan@gmail.com</a>
+</div></section>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div>© 2026 Green Bin</div>
+    <a href="mailto:mallela.rakshan@gmail.com">mallela.rakshan@gmail.com</a>
+  </footer>
+</body>
+</html>
