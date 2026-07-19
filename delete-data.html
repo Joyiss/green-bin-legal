@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  />
+
+  <meta
+    name="description"
+    content="Instructions for requesting deletion of data associated with the Green Bin mobile app."
+  />
+
+  <meta name="theme-color" content="#12372a" />
+
+  <title>Delete Your Data | Green Bin</title>
+
+  <style>
+    :root {
+      --page-background: #f4f7f4;
+      --surface: #ffffff;
+      --surface-soft: #eef4ef;
+      --primary: #1f6b4f;
+      --primary-dark: #12372a;
+      --primary-light: #dff0e6;
+      --text: #17211b;
+      --muted: #5e6b63;
+      --border: #dce5de;
+      --warning-background: #fff8e8;
+      --warning-border: #e7c96c;
+      --max-width: 920px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--page-background);
+      color: var(--text);
+      font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--primary);
+    }
+
+    a:hover {
+      color: var(--primary-dark);
+    }
+
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.94);
+    }
+
+    .header-inner {
+      width: min(calc(100% - 40px), var(--max-width));
+      min-height: 68px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--primary-dark);
+      font-size: 1.05rem;
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .brand-icon {
+      width: 36px;
+      height: 36px;
+      display: grid;
+      place-items: center;
+      border-radius: 11px;
+      background: var(--primary-dark);
+      color: #ffffff;
+      font-size: 1.1rem;
+    }
+
+    .privacy-link {
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 8px 14px;
+      color: var(--primary-dark);
+      font-size: 0.9rem;
+      font-weight: 650;
+      text-decoration: none;
+    }
+
+    .privacy-link:hover {
+      background: var(--surface-soft);
+    }
+
+    main {
+      width: min(calc(100% - 40px), var(--max-width));
+      margin: 0 auto;
+      padding: 70px 0 80px;
+    }
+
+    .hero {
+      margin-bottom: 38px;
+    }
+
+    .eyebrow {
+      margin-bottom: 12px;
+      color: var(--primary);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--primary-dark);
+      font-size: clamp(2.4rem, 7vw, 4.4rem);
+      line-height: 1.04;
+      letter-spacing: -0.05em;
+    }
+
+    .intro {
+      max-width: 720px;
+      margin: 20px 0 0;
+      color: var(--muted);
+      font-size: 1.12rem;
+    }
+
+    .updated {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .content-card {
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: clamp(24px, 6vw, 56px);
+      background: var(--surface);
+      box-shadow: 0 18px 55px rgba(31, 69, 49, 0.07);
+    }
+
+    section + section {
+      margin-top: 44px;
+      padding-top: 44px;
+      border-top: 1px solid var(--border);
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      color: var(--primary-dark);
+      font-size: clamp(1.4rem, 4vw, 1.9rem);
+      line-height: 1.25;
+      letter-spacing: -0.025em;
+    }
+
+    h3 {
+      margin: 28px 0 10px;
+      color: var(--text);
+      font-size: 1.08rem;
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    ul,
+    ol {
+      margin: 12px 0 20px;
+      padding-left: 24px;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    .notice {
+      margin-bottom: 36px;
+      border-left: 4px solid var(--primary);
+      border-radius: 0 14px 14px 0;
+      padding: 18px 20px;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+    }
+
+    .request-box {
+      margin: 22px 0;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px;
+      background: var(--surface-soft);
+    }
+
+    .request-box strong {
+      color: var(--primary-dark);
+    }
+
+    .email-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 8px;
+      border-radius: 999px;
+      padding: 12px 18px;
+      background: var(--primary-dark);
+      color: #ffffff;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .email-button:hover {
+      background: var(--primary);
+      color: #ffffff;
+    }
+
+    .warning {
+      margin-top: 22px;
+      border: 1px solid var(--warning-border);
+      border-radius: 14px;
+      padding: 16px 18px;
+      background: var(--warning-background);
+    }
+
+    .contact-card {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px;
+      background: var(--surface-soft);
+    }
+
+    footer {
+      width: min(calc(100% - 40px), var(--max-width));
+      margin: 0 auto;
+      padding: 28px 0 42px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .header-inner,
+      main,
+      footer {
+        width: min(calc(100% - 24px), var(--max-width));
+      }
+
+      .header-inner {
+        min-height: 62px;
+      }
+
+      .privacy-link {
+        padding: 7px 11px;
+        font-size: 0.82rem;
+      }
+
+      main {
+        padding: 46px 0 58px;
+      }
+
+      .content-card {
+        border-radius: 18px;
+        padding: 24px 20px;
+      }
+
+      footer {
+        flex-direction: column;
+      }
+    }
+
+    @media print {
+      .site-header,
+      footer,
+      .email-button {
+        display: none;
+      }
+
+      body {
+        background: #ffffff;
+      }
+
+      main {
+        width: 100%;
+        padding: 0;
+      }
+
+      .content-card {
+        border: none;
+        padding: 0;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-icon" aria-hidden="true">♻</span>
+        <span>Green Bin</span>
+      </a>
+
+      <a class="privacy-link" href="index.html">
+        Privacy Policy
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="eyebrow">Privacy</div>
+
+      <h1>Request Data Deletion</h1>
+
+      <p class="intro">
+        Learn how to request deletion of information associated with
+        your use of the Green Bin mobile app.
+      </p>
+
+      <p class="updated">
+        Last updated: July 18, 2026
+      </p>
+    </div>
+
+    <article class="content-card">
+      <div class="notice">
+        Green Bin does not require users to create an account. Because
+        most information is stored using request identifiers or
+        pseudonymous identifiers, Green Bin may need additional details
+        to locate records connected to your request.
+      </div>
+
+      <section>
+        <h2>How to Request Deletion</h2>
+
+        <p>
+          To request deletion of data associated with your use of
+          Green Bin:
+        </p>
+
+        <ol>
+          <li>
+            Email
+            <a href="mailto:mallela.rakshan@gmail.com">
+              mallela.rakshan@gmail.com
+            </a>.
+          </li>
+
+          <li>
+            Use the subject line
+            <strong>Green Bin Data Deletion Request</strong>.
+          </li>
+
+          <li>
+            Include any information that can help identify the relevant
+            records.
+          </li>
+        </ol>
+
+        <div class="request-box">
+          <strong>Helpful information may include:</strong>
+
+          <ul>
+            <li>A Green Bin request ID</li>
+            <li>The approximate date of a scan or feedback submission</li>
+            <li>The scanned item or corrected item name</li>
+            <li>A description of the feedback you submitted</li>
+          </ul>
+
+          <p>
+            Do not include unnecessary passwords, financial information,
+            government identification numbers, medical information, or
+            other sensitive personal information.
+          </p>
+
+          <a
+            class="email-button"
+            href="mailto:mallela.rakshan@gmail.com?subject=Green%20Bin%20Data%20Deletion%20Request"
+          >
+            Email a Deletion Request
+          </a>
+        </div>
+
+        <p>
+          Green Bin will review deletion requests and respond within a
+          reasonable period. Additional information may be requested
+          only when it is reasonably necessary to locate the relevant
+          records or verify the request.
+        </p>
+      </section>
+
+      <section>
+        <h2>Data That May Be Deleted</h2>
+
+        <p>
+          When the relevant records can reasonably be identified,
+          Green Bin may delete:
+        </p>
+
+        <ul>
+          <li>Closed-testing feedback</li>
+          <li>Corrected item information</li>
+          <li>
+            Recognition, guidance, and diagnostic context associated
+            with submitted feedback
+          </li>
+          <li>
+            Other server-side records that can reasonably be connected
+            to the request
+          </li>
+          <li>
+            Support emails when they are no longer needed to process or
+            document the request
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Data That May Be Retained</h2>
+
+        <p>
+          Certain information may not be deleted, or may be retained for
+          a limited period, when:
+        </p>
+
+        <ul>
+          <li>
+            Green Bin cannot reasonably determine that the information
+            belongs to the requester
+          </li>
+          <li>
+            The information has been anonymized or aggregated
+          </li>
+          <li>
+            It is needed for security, fraud prevention, abuse
+            prevention, rate limiting, or troubleshooting
+          </li>
+          <li>
+            It is required to comply with a legal obligation or resolve
+            a dispute
+          </li>
+          <li>
+            It remains temporarily in service-provider logs, backups, or
+            disaster-recovery systems
+          </li>
+        </ul>
+
+        <p>
+          Residual copies may remain until the normal backup or
+          log-retention process of Green Bin’s service providers is
+          completed. These copies are not intentionally used for normal
+          app operations.
+        </p>
+
+        <p>
+          Derived recognition caches, image fingerprints, embeddings,
+          guidance caches, and hashed scan-limit records may be retained
+          when Green Bin cannot reliably connect them to the person
+          making the request.
+        </p>
+      </section>
+
+      <section>
+        <h2>Data Stored on Your Device</h2>
+
+        <p>
+          Recent scans, image references, the installation identifier,
+          scan-limit information, and related app data may be stored
+          locally on your device.
+        </p>
+
+        <p>You can remove locally stored information by:</p>
+
+        <ul>
+          <li>Deleting recent-scan records inside Green Bin</li>
+          <li>
+            Clearing Green Bin’s application storage through your device
+            settings
+          </li>
+          <li>Uninstalling Green Bin</li>
+        </ul>
+
+        <div class="warning">
+          Deleting a recent-scan record removes the history entry, but it
+          may not delete the original image from your camera, photo
+          library, or other device-managed storage.
+        </div>
+      </section>
+
+      <section>
+        <h2>No Green Bin Account Is Required</h2>
+
+        <p>
+          Green Bin does not currently allow users to create accounts.
+          Therefore, there is no Green Bin account that must be deleted
+          separately.
+        </p>
+
+        <p>
+          A request applies only to information that Green Bin can
+          reasonably locate and associate with the details you provide.
+        </p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+
+        <div class="contact-card">
+          <strong>Rakshan Mallela</strong><br />
+          Green Bin<br />
+          Georgia, United States<br />
+          <a href="mailto:mallela.rakshan@gmail.com">
+            mallela.rakshan@gmail.com
+          </a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <span>© 2026 Green Bin</span>
+
+    <a href="index.html">
+      View Privacy Policy
+    </a>
+  </footer>
+</body>
+</html>
