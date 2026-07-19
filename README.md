@@ -1,51 +1,20 @@
 # Green Bin Legal
 
-A static GitHub Pages site containing the Green Bin Privacy Policy.
+This repository hosts the public legal information for **Green Bin**, a mobile app that helps users identify items and understand how they should be disposed of.
 
-## Publish with GitHub Pages
+## About Green Bin
 
-1. Create a new **public** GitHub repository named `green-bin-legal`.
-2. Upload all files from this folder to the repository root.
-3. Commit the files to the `main` branch.
-4. Open the repository's **Settings**.
-5. In the left sidebar, select **Pages**.
-6. Under **Build and deployment**, set:
-   - **Source:** Deploy from a branch
-   - **Branch:** `main`
-   - **Folder:** `/ (root)`
-7. Select **Save**.
-8. GitHub will display the published site URL after deployment.
+Green Bin uses image recognition and disposal guidance to help users decide whether an item should be recycled, composted, donated, taken to a special disposal location, or placed in the trash.
 
-The default URL will follow this format:
+The app may process scan images, location information for nearby disposal searches, barcode information, technical diagnostics, and optional testing feedback. Full details are provided in the published Privacy Policy.
 
-`https://YOUR_GITHUB_USERNAME.github.io/green-bin-legal/`
+## Contact
 
-Use the final URL in:
+For privacy questions, support requests, or data deletion requests:
 
-- Google Play Console → Policy and programs → App content → Privacy policy
-- The Green Bin app's Profile or About screen
+**Rakshan Mallela**
+**Email:** [mallela.rakshan@gmail.com](mailto:mallela.rakshan@gmail.com)
 
-## Before publishing
+## Last Updated
 
-Open `index.html` and verify:
-
-- The last-updated date
-- The contact email
-- The named service providers
-- The production backend hosting description
-- The target-audience language
-
-## Optional custom domain
-
-After buying a domain, add it in:
-
-**Repository Settings → Pages → Custom domain**
-
-GitHub will add or update a `CNAME` file. Configure the required DNS records with your domain provider, wait for DNS verification, and enable **Enforce HTTPS**.
-
-## Updating the policy
-
-1. Edit `index.html`.
-2. Change the “Last updated” date.
-3. Commit and push to `main`.
-4. GitHub Pages will republish the site automatically.
+July 18, 2026
